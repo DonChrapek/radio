@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Categories = (props) => {   
+const Categories = (props) => {
     return (
       <div>
         { props.categories.map((category, index) => {

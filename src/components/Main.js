@@ -4,7 +4,9 @@ import 'styles/reset.css';
 import React from 'react';
 
 /* Components */
+import Header from './Header';
 import Categories from './Categories';
+import Stations from './Stations';
 
 class AppComponent extends React.Component {
     
@@ -47,10 +49,11 @@ class AppComponent extends React.Component {
     return (
       <div id='app-content'>
         <div id='side-panel'>
-            <Categories categories={this.categories}/>
+          <Categories categories={this.categories} />
         </div>
         <div className='main-section'>
-          <h1>App!</h1>
+          <Header />
+          <Stations stations={this.stations} />
         </div>
       </div>
     );
