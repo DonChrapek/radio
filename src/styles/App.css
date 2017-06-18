@@ -1,21 +1,25 @@
 /* Base Application Styles */
+* {
+    box-sizing: border-box;
+}
+
 body {
   color: #fff;
   background: #222;
 }
 
-.index img {
-  margin: 40px auto;
-  border-radius: 4px;
-  background: #fff;
-  display: block;
+#app-content {
+    width: 100%;
+    padding: 0 10vw;
 }
 
-.index .notice {
-  margin: 20px auto;
-  padding: 15px 0;
-  text-align: center;
-  border: 1px solid #000;
-  border-width: 1px 0;
-  background: #666;
+#side-panel {
+    display: inline-block;
+    width: 30%;
 }
+
+.main-section {
+    display: inline-block;
+    width: 70%;
+}
+
